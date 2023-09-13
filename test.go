@@ -31,7 +31,7 @@ func getDataType(value *ua.DataValue) string {
 	return value.Value.NodeID().String()
 }
 func main() {
-	endpoint := "opc.tcp://GUROLGENCEL.SASA.LOCAL:4334/POC-Sample"
+	endpoint := "opc.tcp://localhost:4334/POC-Sample"
 	nodeID := "ns=1;i=1001"
 
 	ctx := context.Background()
